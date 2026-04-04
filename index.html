@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>114資管一B-人文素養</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== 開始畫面 ========== -->
+  <div id="screen-start" class="screen active">
+    <div class="start-bg-overlay"></div>
+    <div class="start-content">
+      <div class="start-badge">健康心理測驗</div>
+      <h1 class="start-title">健康存摺<br>ABC</h1>
+      <p class="start-sub">看完題目後請依據您的第一直覺作答喔~</p>
+      <div class="start-divider"></div>
+      <button id="btn-start" class="btn-main">開始測驗</button>
+      <p class="start-hint">共 8 題 · 不限時間 · 請依序作答</p>
+    </div>
+  </div>
+
+<!-- ========== 填資料畫面 ========== -->
+<div id="screen-register" class="screen">
+  <div class="start-bg-overlay"></div>
+  <div class="start-content">
+    <div class="start-badge">開始前請請輸入你的資訊</div>
+    <h2 class="register-title">需填寫正確才能認證人文素養</h2>
+    <div class="submit-form">
+      <input type="text" id="input-name" placeholder="姓名" class="submit-input" /><br>
+      <input type="text" id="input-id" placeholder="學號" class="submit-input" />
+      <p id="submit-msg" class="submit-msg"></p>
+    </div>
+    <button id="btn-register" class="btn-main">確認</button>
+  </div>
+</div>
+
+  <!-- ========== 題目畫面 ========== -->
+  <div id="screen-question" class="screen">
+    <div class="q-bg" id="q-bg"></div>
+    <div class="q-overlay"></div>
+
+    <div class="q-ui">
+      <!-- 頂部進度條 -->
+      <div class="progress-bar-wrap">
+        <div class="progress-bar" id="progress-bar"></div>
+        <span class="progress-label" id="progress-label">1 / 8</span>
+      </div>
+
+      <!-- 情境問題框 -->
+      <div class="q-situation-wrap">
+        <div class="q-num-badge" id="q-num-badge">第 1 題</div>
+        <p class="q-situation" id="q-situation">題目載入中...</p>
+      </div>
+
+      <!-- 選項區 -->
+      <div class="q-options" id="q-options">
+        <button class="opt" data-index="0"></button>
+        <button class="opt" data-index="1"></button>
+        <button class="opt" data-index="2"></button>
+        <button class="opt" data-index="3"></button>
+      </div>
+
+      <!-- 下一題按鈕 -->
+      <div class="q-nav">
+        <button id="btn-next" class="btn-next" disabled>
+          <span id="btn-next-text">下一題</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== 結語畫面 ========== -->
+  <div id="screen-ending" class="screen">
+    <div class="ending-bg-overlay"></div>
+    <div class="ending-content">
+      <div class="ending-icon" id="ending-icon"></div>
+      <div class="ending-score-wrap">
+        <span class="ending-score-label">測驗分數</span>
+        <span class="ending-score" id="ending-score">0</span>
+        <span class="ending-score-max">/ 32</span>
+      </div>
+      <div class="ending-title-wrap">
+        <h2 class="ending-title" id="ending-title">結果</h2>
+      </div>
+      <p class="ending-text" id="ending-text"></p>
+      <div class="ending-divider"></div>
+      <button id="btn-restart" class="btn-main btn-restart">再玩一次</button>
+      <p class="photo-warning">📸 請和結語畫面拍一張照片（需露全臉）</p>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
