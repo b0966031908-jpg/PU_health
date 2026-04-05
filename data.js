@@ -6,7 +6,7 @@ const questions = [
     options: [
       { label: "A", text: "有點害怕，想要退縮", score: 1 },
       { label: "B", text: "現在是0歲成年人，還要18年才是成年的成年人~", score: 2 },
-      { label: "C", text: "有點想法，但對廣闊的未來感到迷茫", score: 3 },
+      { label: "C", text: "努力學習，但對廣闊的未來感到迷茫", score: 3 },
       { label: "D", text: "想好未來走向，正在成為自己內心期望的樣子！", score: 4 }
     ]
   },
@@ -51,7 +51,7 @@ const questions = [
       { label: "A", text: "默默自己多做，讓他成為躺贏狗", score: 1 },
       { label: "B", text: "他負責的部分不管，做自己的就好", score: 2 },
       { label: "C", text: "做完後，只寫有做事的組員的名字，給他0分！", score: 3 },
-      { label: "D", text: "嘗試與他溝通，了解他的困難", score: 4 }
+      { label: "D", text: "直接發出戰鬥邀請", score: 4 }
     ]
   },
   {
@@ -72,8 +72,8 @@ const questions = [
     options: [
       { label: "A", text: "晚餐吃什麼？", score: 1 },
       { label: "B", text: "人際關係的處理", score: 2 },
-      { label: "C", text: "時間管理", score: 3 },
-      { label: "D", text: "學業壓力", score: 4 }
+      { label: "C", text: "學習專業技能", score: 3 },
+      { label: "D", text: "自我認知的提升", score: 4 }
     ]
   },
   {
